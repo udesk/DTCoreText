@@ -1,6 +1,7 @@
 DTCoreText
 ==========
 
+copy 
 This project aims to duplicate the methods present on Mac OSX which allow creation of `NSAttributedString` from HTML code on iOS. 
 
 The project covers two broad areas:
