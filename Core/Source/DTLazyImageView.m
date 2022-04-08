@@ -277,7 +277,7 @@ didReceiveResponse:(NSURLResponse *)response
 	{
 		NSHTTPURLResponse *httpResponse = (id)response;
 		
-		if (![[httpResponse MIMEType] hasPrefix:@"image"])
+		if (![[httpResponse MIMEType] hasPrefix:@"image"] && ![[httpResponse MIMEType] hasPrefix:@"application/octet-stream"])
 		{
 #if DTCORETEXT_USES_NSURLSESSION
 			completionHandler(NSURLSessionResponseCancel);
